@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="cart">
+                <form action="#" class="search-form" @submit.prevent="filterGoods">
+                    <searchform v-model="searchLine" id="search-template"></searchform>
+                    <button type="submit" class="btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="btn-cart" type="button" @click="isCartOpen = !isCartOpen">Корзина</button>
+    
+                <cart :cart-items="cartItems" :img="imgCart" :visibility="isCartOpen" @del-product="delProduct"></cart>
+    
+            </div>
+        </header>
+        <main>
+            <products :products="filtered" :img="imgCatalog" @add-product="addProduct"></products>
+        </main>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/search.js"></script>
+        <script src="js/products.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/main6.js"></script>
+</body>
+</html>
