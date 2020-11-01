@@ -18,3 +18,5 @@ Vue.component('error', {
 </div>
     `
 })
+
+export default error

@@ -1,9 +1,17 @@
+import cart from './CartComponent'
+import products from './ProductComponent'
+import filterEl from './FilterComp'
+import error from './ErrorComp'
+
 const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 
 const app = new Vue({
     el: '#app',
-    data: {
-        userSearch: '',
+    components: {
+        cart,
+        products,
+        error,
+        filterEl
     },
     methods: {
         getJson(url){
@@ -51,6 +59,8 @@ const app = new Vue({
     }
 
 });
+
+export default app
 
 
 // class List {

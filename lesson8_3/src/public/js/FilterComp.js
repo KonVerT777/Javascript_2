@@ -1,4 +1,4 @@
-Vue.component('filter-el', {
+Vue.component('filterEl', {
     data(){
       return {
           userSearch: ''
@@ -11,3 +11,5 @@ Vue.component('filter-el', {
                 </button>
             </form>`
 })
+
+export default filterEl

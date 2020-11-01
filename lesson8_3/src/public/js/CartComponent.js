@@ -95,3 +95,5 @@ Vue.component('cart-item', {
                 </div>
     `
 })
+
+export default cart

@@ -42,3 +42,5 @@ Vue.component('products', {
              </div>
      ` 
 })
+
+export default products
