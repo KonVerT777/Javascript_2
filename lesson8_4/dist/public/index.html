@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="logo">Для тебя</div>
+        <div class="cart">
+            <filter-el></filter-el>
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <article class="product-description">
+            <div class="product-description-wrp">
+                <h3 class="product-description-title">О нашем продукте</h3>
+                <p class="product-description-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
+                <p class="product-description-text-2">Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+            </div>
+            <img src="/b3ca027d7a62efcef1ecac1e3fc1b5eb.jpg" alt="О продукте" class="product-description-pic" width="430" height="245">
+        </article>
+        <products ref="products"></products>
+        <error ref="error"></error>
+        <section class="reviews">
+            <h3 class="reviews-title">Отзывы</h3>
+            <div class="reviews-item">
+                <div class="reviews-item-avatar"></div>
+                <p class="reviews-item-text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                    <span class="reviews-item-text-author">Lourens S.</span>
+                </p>
+            </div>
+            <div class="reviews-item">
+                <div class="reviews-item-avatar"></div>
+                <p class="reviews-item-text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                    <span class="reviews-item-text-author">Lourens S.</span>
+                </p>
+            </div>
+            <div class="reviews-item">
+                <div class="reviews-item-avatar"></div>
+                <p class="reviews-item-text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                    <span class="reviews-item-text-author">Lourens S.</span>
+                </p>
+            </div>
+            <div class="reviews-item">
+                <div class="reviews-item-avatar"></div>
+                <p class="reviews-item-text">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                    <span class="reviews-item-text-author">Lourens S.</span>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contacts">Контакты</div>
+    </footer>
+</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="/js/main.js"></script></body>
+</html>
+
+<!--<div class="cart-item" data-id="${this.id_product}">-->
+    <!--<div class="product-bio">-->
+        <!--<img src="${this.img}" alt="Some image">-->
+        <!--<div class="product-desc">-->
+            <!--<p class="product-title">${this.product_name}</p>-->
+            <!--<p class="product-quantity">Quantity: ${this.quantity}</p>-->
+            <!--<p class="product-single-price">$${this.price} each</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="right-block">-->
+        <!--<p class="product-price">${this.quantity*this.price}</p>-->
+        <!--<button class="del-btn" data-id="${this.id_product}">&times;</button>-->
+    <!--</div>-->
+<!--</div>-->
