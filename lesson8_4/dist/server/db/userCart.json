@@ -1,0 +1,20 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 4,
+            "id_product": 123,
+            "product_name": "Кольцо",
+            "price": 456,
+            "img": "http://localhost:3000/img/ring.jpg"
+        },
+        {
+            "quantity": 2,
+            "id_product": 456,
+            "product_name": "Брошь",
+            "price": 100,
+            "img": "http://localhost:3000/img/brooch.jpg"
+        }
+    ]
+}
