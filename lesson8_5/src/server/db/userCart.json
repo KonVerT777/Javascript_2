@@ -1,0 +1,21 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 124,
+            "product_name": "Браслет",
+            "price": 160,
+            "img": "/bracelet.jpg"
+        },
+        {
+            "quantity": 2,
+            "id_product": 457,
+            "product_name": "Серьги",
+            "price": 300,
+            "img": "/earrings.jpg"
+        }
+       
+    ]
+}
