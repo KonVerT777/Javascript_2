@@ -1,0 +1,34 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 124,
+            "product_name": "Браслет",
+            "price": 160,
+            "img": "http://localhost:3000/img/bracelet.jpg"
+        },
+        {
+            "quantity": 2,
+            "id_product": 457,
+            "product_name": "Серьги",
+            "price": 300,
+            "img": "http://localhost:3000/img/earrings.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 456,
+            "product_name": "Брошь",
+            "price": 100,
+            "img": "http://localhost:3000/img/brooch.jpg"
+        },
+        {
+            "quantity": 4,
+            "id_product": 123,
+            "product_name": "Кольцо",
+            "price": 456,
+            "img": "http://localhost:3000/img/ring.jpg"
+        }
+    ]
+}
