@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="cart">
+                <form action="#" class="search-form">
+                    <input type="text" class="search-field" v-model="searchLine">
+                    <button class="btn-search" type="submit" @click="FilterGoods()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                    <button class="btn-cart" type="button" @click="isCartOpen = !isCartOpen">Корзина</button>
+                    <div class="cart-products" v-show="isCartOpen">
+                        <div class="cart-item" v-for="el of cart" :key="el.id_product">
+                            <img :src="imgCatalog" alt="Some image">
+                            <div class="product-desc">
+                                <p class="product-title">{{ el.product_name }}</p>
+                                <p class="product-quantity">Quantity: {{ el.quantity }}</p>
+                                <p class="product-single-price">${{ el.price }} each</p>
+                            </div>
+                            <p class="product-price">${{ el.quantity * el.price }}</p>
+                            <button class="del-btn" @click="delProduct">&times;</button>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <main>
+            <div class="products">
+                <div class="product-item" v-for="product of products" :key="product.id_product">
+                    <img :src="imgCatalog" alt="Some img">
+                    <div class="desc">
+                        <h3>{{ product.product_name }}</h3>
+                        <p>{{ product.price }} $</p>
+                        <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>        
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/main5.js"></script>
+</body>
+</html>
